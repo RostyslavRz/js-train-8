@@ -474,8 +474,8 @@ function customIncludes(arr, element) {
   }
   let includesIs = arr.includes(element);
   // Використовуємо метод includes для перевірки наявності елемента в масиві
-  const result = arr.filter((element) => element == "element");
-  console.log(result.length);
+  const result = arr.filter((e) => e === element).length;
+  console.log(result);
   // За допомогою методу filter перевіряємо скільки разів в масиві зустрічається елемент та виводимо число в консоль
   //Повертаємо результат
   return includesIs;
